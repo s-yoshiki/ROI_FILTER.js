@@ -17,20 +17,20 @@
 	<div id="">
 		<h3>まずはじめに</h3>
 		
-		<pre><!--
+		<pre>
 		var roi = new ROI_FILTER("canvas_id");
 
-		--></pre>
+		</pre>
 	</div>
 
 	<div id="">
 		<h3>画像を書き込む</h3>
 		
-		<pre><!--
+		<pre>
 		var image = new Image();
 		image.src = "./picture/lena.png";
 		roi.setImage(image, 512, 512);
-		--></pre>
+		</pre>
 	</div>
 
 	<div>
