@@ -111,7 +111,7 @@ roi.average();
 
 		<p>砂嵐</p>
 		<pre>
-roi.sandstorm(x,y,w,h);
+roi.rect.sandstorm(x,y,w,h);
 		</pre>
 
 	</div>
@@ -121,7 +121,7 @@ roi.sandstorm(x,y,w,h);
 
 		<p>砂嵐</p>
 		<pre>
-roi.sandstorm(x,y,w,h);
+roi.circle.sandstorm(x,y,w,h);
 		</pre>
 	</div>
 
@@ -130,7 +130,7 @@ roi.sandstorm(x,y,w,h);
 
 		<p>砂嵐</p>
 		<pre>
-roi.sandstorm(x1,y1,x2,y2,x3,y3);
+roi.triangle.sandstorm(x1,y1,x2,y2,x3,y3);
 		</pre>
 	</div>
 
@@ -139,7 +139,16 @@ roi.sandstorm(x1,y1,x2,y2,x3,y3);
 
 		<p>砂嵐</p>
 		<pre>
-roi.sandstorm([x1,x2,x3...xn],[y1,y2,y3...yn]);
+roi.polygon.sandstorm([x1,x2,x3...xn],[y1,y2,y3...yn]);
+		</pre>
+	</div>
+
+	<div>
+		<h3>菱形にフィルタをかける</h3>
+
+		<p>砂嵐</p>
+		<pre>
+roi.daiamond.sandstorm(x1,y1,x2,y2,x3,y3);
 		</pre>
 	</div>
 
