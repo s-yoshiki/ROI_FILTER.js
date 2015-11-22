@@ -1,6 +1,6 @@
 
 var image = new Image();
-image.src = "lena.png";
+image.src = "./picture/lena.png";
 var xx = 0;
 
 window.onload = function(){
