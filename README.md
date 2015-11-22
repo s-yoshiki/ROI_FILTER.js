@@ -105,6 +105,44 @@ roi.average();
 roi.average();
 		</pre>
 	</div>
+
+	<div>
+		<h3>短形にフィルタをかける</h3>
+
+		<p>砂嵐</p>
+		<pre>
+roi.sandstorm(x,y,w,h);
+		</pre>
+
+	</div>
+
+	<div>
+		<h3>円形(楕円)にフィルタをかける</h3>
+
+		<p>砂嵐</p>
+		<pre>
+roi.sandstorm(x,y,w,h);
+		</pre>
+	</div>
+
+	<div>
+		<h3>三角形にフィルタをかける</h3>
+
+		<p>砂嵐</p>
+		<pre>
+roi.sandstorm(x1,y1,x2,y2,x3,y3);
+		</pre>
+	</div>
+
+	<div>
+		<h3>指定した形状にフィルタをかける</h3>
+
+		<p>砂嵐</p>
+		<pre>
+roi.sandstorm([x1,x2,x3...xn],[y1,y2,y3...yn]);
+		</pre>
+	</div>
+
 </div>
 
 
