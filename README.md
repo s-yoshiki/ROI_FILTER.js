@@ -4,7 +4,7 @@
 複雑な形状のROI(関心領域)に対してフィルタをかけることができる,画像処理ライブラリ.
 
 <div>
-	<iframe src="http://jsrun.it/s.yoshiki1123/0EQI" style="width:512px;height:512px;"></iframe>
+	<iframe src="http://jsrun.it/s.yoshiki1123/0EQI" width="512" height="512"></iframe>
 </div>
 <div>
 	--サポートブラウザ--
