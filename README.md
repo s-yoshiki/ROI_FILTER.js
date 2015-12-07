@@ -160,5 +160,5 @@ roi.daiamond.sandstorm(x1,y1,x2,y2,x3,y3);
 
 
 <div id="footer">
-	The MIT License (MIT)  Copyright (c) 2015 Yoshiki Shinagawa
+	Copyright © 2015 Yoshiki Shinagawa Licensed under the MIT License
 </div>
