@@ -4,7 +4,7 @@
 複雑な形状のROI(関心領域)に対してフィルタをかけることができる,画像処理ライブラリ.
 
 <div align="center">
-	<img src="https://github.com/s-yoshiki/ROI_FILTER.js/blob/master/picture/sample.png" style="width:256px;height:256px;">
+	<img src="https://github.com/s-yoshiki/ROI_FILTER.js/blob/master/picture/sample.png" width="256" height="256">
 </div>
 
 <div>
