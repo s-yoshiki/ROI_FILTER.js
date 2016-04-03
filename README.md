@@ -3,6 +3,10 @@
 
 複雑な形状のROI(関心領域)に対してフィルタをかけることができる,画像処理ライブラリ.
 
+<div align="center">
+	<img src="https://github.com/s-yoshiki/ROI_FILTER.js/blob/master/picture/sample.png">
+</div>
+
 <div>
 	<a href="http://jsrun.it/s.yoshiki1123/0EQI">DEMO</a>
 </div>
