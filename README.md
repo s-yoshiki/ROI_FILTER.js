@@ -21,148 +21,108 @@
 	(2015/11/22 現在の最新版)
 </div>
 
-<div id="main">
-	<div id="">
-		<h3>はじめに</h3>
-		
-		<pre>
+## 基本
+### インスタンス生成
+
+```js
 var roi = new ROI_FILTER("canvas_id");
+```
 
-		</pre>
-	</div>
-
-	<div id="">
-		<h3>画像を書き込む</h3>
-		
-		<pre>
+## メソッド
+### 画像書き込み
+```js
 var image = new Image();
 image.src = "./picture/lena.png";
 roi.setImage(image, 512, 512);
-		</pre>
-	</div>
+```
 
-	<div>
-		<h3>画像全体にフィルタをかける</h3>
-
-		<p>砂嵐</p>
-		<pre>
+### debuger
+```js
 roi.sandstorm();
-		</pre>
+```
 
-		<p>グレースケール変換</p>
-		<pre>
+### グレースケール変換
+```js
 roi.grayscale();
-		</pre>
+```
 
-		<p>２値化</p>
-		<pre>
-roi.threshold(THRESHOLD);
-		</pre>
-
-		<p>画像配列 R,G,Bに対してr,g,bを掛ける(R*r ,G*g B*b).反映されるのは0〜255まで</p>
-		<pre>
+### スカラ
+```js
 roi.scalar(r,g,b);
 //exsample
 roi.scalar(1.0 ,1.3 ,0.8);
-		</pre>
+```
 
-		<p>3x3のcanny edgeフィルタ</p>
-		<pre>
+### バイナリ化
+```js
+var THRESHOLD = 50;
+roi.threshold(THRESHOLD);
+```
+
+### canny edge 
+```js
 roi.canny(THRESHOLD);
-		</pre>
+```
 
-		<p>3x3のlaplacianフィルタ</p>
-		<pre>
+### ラプラシアン (3x3)
+```js
 roi.laplacian();
-		</pre>
+```
 
-		<p>ネガポジ反転</p>
-		<pre>
+### ビット反転
+```js
 roi.reverse();
-		</pre>
+```
 
-		<p>画像配列 R,G,Bに対してr,g,bで塗りつぶす(R=r,G=g,B=b).反映されるのは0以上の時/p>
-		<pre>
+### 画像配列 R,G,Bに対してr,g,bで塗りつぶす(R=r,G=g,B=b).
+反映されるのは0以上の時
+```js
 roi.fill(r,g,b);
 //exsample
 roi.fill(20,50,100);
 roi.fill(20,50,-1);//Bは反映されない
-		</pre>
+```
 
-		<p>画像配列 R,G,Bのフィルタの値を交換</p>
-		<pre>
+### 3x3 gaussian フィルタ
+```js
+roi.gaussian();
+```
+
+### チャンネル置換
+```js
 roi.change("r","g","b");
 //exsample
 roi.change("g","b","r");
 roi.change("r","r","b");
 roi.change("g","g","g");
-		</pre>
+```
 
-		<p>3x3 gaussian フィルタ</p>
-		<pre>
-roi.gaussian();
-		</pre>
-
-		<p>3x3 平滑化 フィルタ</p>
-		<pre>
+###  平滑化
+```js
 roi.average();
-		</pre>
+```
 
-		<p>3x3 median フィルタ</p>
-		<pre>
-roi.average();
-		</pre>
-	</div>
+## イレギュラーな処理
 
-	<div>
-		<h3>短形にフィルタをかける</h3>
-
-		<p>砂嵐</p>
-		<pre>
+### 矩形
+```js
 roi.rect.sandstorm(x,y,w,h);
-		</pre>
+```
 
-	</div>
-
-	<div>
-		<h3>円形(楕円)にフィルタをかける</h3>
-
-		<p>砂嵐</p>
-		<pre>
-roi.circle.sandstorm(x,y,w,h);
-		</pre>
-	</div>
-
-	<div>
-		<h3>三角形にフィルタをかける</h3>
-
-		<p>砂嵐</p>
-		<pre>
+### 三角形
+```js
 roi.triangle.sandstorm(x1,y1,x2,y2,x3,y3);
-		</pre>
-	</div>
+```
 
-	<div>
-		<h3>指定した形状にフィルタをかける</h3>
+### 円
+```js
+roi.circle.sandstorm(x,y,w,h);
+```
 
-		<p>砂嵐</p>
-		<pre>
+### 多角形・ポリゴン 
+```js
 roi.polygon.sandstorm([x1,x2,x3...xn],[y1,y2,y3...yn]);
-		</pre>
-	</div>
-
-	<div>
-		<h3>菱形にフィルタをかける</h3>
-
-		<p>砂嵐</p>
-		<pre>
-roi.daiamond.sandstorm(x1,y1,x2,y2,x3,y3);
-		</pre>
-	</div>
-
-</div>
+```
 
 
-<div id="footer">
-	Copyright © 2015 Yoshiki Shinagawa Licensed under the MIT License
-</div>
+Copyright © 2015 Yoshiki Shinagawa Licensed under the MIT License
